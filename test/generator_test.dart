@@ -7,12 +7,12 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_test/flutter_test.dart';
 
-import 'package:hello_flutter/main.dart';
+import 'package:hello_flutter/app/generator.dart';
 
 void main() {
   testWidgets('Name Pair Generator smoke test', (WidgetTester tester) async {
     // Build our app and trigger a frame.
-    await tester.pumpWidget(new MyApp());
+    await tester.pumpWidget(new GeneratorApp());
 
     // Verify that our counter starts at 0.
     expect(find.text('HelloWorld'), findsOneWidget);

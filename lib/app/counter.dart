@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 
-void main() => runApp(new DefaultApp());
+// void main() => runApp(new DefaultApp());
 
-class DefaultApp extends StatelessWidget {
+class CounterApp extends StatelessWidget {
   // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
