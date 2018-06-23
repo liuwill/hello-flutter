@@ -37,8 +37,11 @@ class DemoScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       body: Center(
-        child: RaisedButton(
-          child: Text('Name Pair Generator'),
+        child: RaisedButton.icon(
+          key: new Key("name-pair-btn"),
+          // child: Text('Name Pair Generator'),
+          icon: const Icon(Icons.album, size: 18.0),
+          label: const Text('Name Pair Generator'),
           onPressed: () {
             // Navigate to second screen when tapped!
             openGenerator(context);
