@@ -14,6 +14,6 @@ void main() {
     // Build our app and trigger a frame.
     await tester.pumpWidget(new MainApp());
 
-    expect(find.byIcon(Icons.album), findsOneWidget);
+    expect(find.byType(RaisedButton), findsWidgets);
   });
 }
